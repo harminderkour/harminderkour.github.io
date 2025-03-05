@@ -3,9 +3,93 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Your Name</title>
+    <title>Harminder Kour</title>
     <link rel="icon" type="image/x-icon" href="assets/images/ball.png" />
-    <link rel="stylesheet" href="assets/css/styles.css" />
+    <style>
+      .header-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: #4f58ab;
+        color: white;
+      }
+
+      .header-row .box h1 {
+        margin: 0;
+      }
+
+      .header-row .box ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+        padding: 0;
+        margin: 0;
+      }
+
+      .header-row .box ul li {
+        display: inline;
+      }
+
+      .header-row .box ul li a {
+        text-decoration: none;
+        color: antiquewhite;
+        font-weight: bold;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      #home, #projects, #services, #about, #contact {
+      min-height: 100vh; 
+      display: flex; 
+      flex-direction: column; 
+      justify-content: center;
+      padding: 20px;
+      }
+      .box img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: auto;
+      padding-left: 40%;;
+      }
+      .box h1 {
+        font-size: 2.5rem;
+      }
+
+      .box p {
+        font-size: 1.2rem; 
+        text-align: left;
+      }
+      button {
+        padding: 10px 20px; 
+        font-size: 14px; 
+        border-radius: 10px; 
+        background-color: #4f58ab;
+        color: white;
+        border-color: #4f58ab;
+      }
+      .skills-container {
+        text-align: center;
+        padding: 20px;
+        background-color: #f4f4f4;
+        border-radius: 10px;
+        width: 1000px;
+        margin: auto;
+      }
+      .skills-container h2 {
+        margin-bottom: 10px;
+        color: #333;
+      }
+      .skills-list {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #4f58ab;
+      }
+    </style>
   </head>
   <body>
     <div class="container">
@@ -15,9 +99,7 @@
           <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#services">Services</a></li>
             <li><a href="#about">About</a></li>
-
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
@@ -27,147 +109,98 @@
         <div style="display: flex;padding-top: 50px;">
           <div class="box">
             <h1>Full Stack Developer</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
-              neque est nihil ipsum error. Deserunt voluptas explicabo ea eum
-              quasi. Rem nisi molestias quia nesciunt incidunt numquam fugiat
-              perferendis assumenda?
+            <p style="max-width: 800px; margin: 0 auto; font-size: 20px; color: #333; text-align: left;"> 
+              Passionate about building efficient, scalable, and user-friendly web applications.
+              I specialize in front-end development, ensuring seamless user experiences.
+              With knowledge in HTML, CSS, and JavaScript, 
+              I focus on building responsive and user-friendly front-end solutions.
+              <br>
+              I enjoy solving complex problems and turning ideas into reality.
             </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
-              neque est nihil ipsum error. Deserunt voluptas explicabo ea eum
-              quasi. Rem nisi molestias quia nesciunt incidunt numquam fugiat
-              perferendis assumenda?
-            </p>
-            <button>Button 1</button>
-            <button>Button 1</button>
+            <br>
+            <a href="#projects"><button>View Projects</button></a>
+            <a href="#contact"><button>Contact Me</button></a>
           </div>
           <div class="box">
-            <img src="https://picsum.photos/id/2/400/400" />
+            <img src="https://i.pinimg.com/736x/30/ff/a5/30ffa50b9515128345d999d3fbd73961.jpg" />
           </div>
         </div>
       </div>
 
-      <div id="projects" class="row" style="background-color: lightcoral">
+      <div id="projects" class="row" style="background-color: #A9B5DF">
         <h1>Projects</h1>
         <div style="display: flex">
-          <div class="box">
-            <h3>Project 1</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-              quia nobis eligendi reiciendis. Esse a possimus eum est veritatis
-              aliquid ut eveniet. Et illum odio ut voluptates molestiae?
-              Perspiciatis, ab.
-            </p>
-          </div>
-
-          <div class="box">
-            <h3>Project 2</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-              quia nobis eligendi reiciendis. Esse a possimus eum est veritatis
-              aliquid ut eveniet. Et illum odio ut voluptates molestiae?
-              Perspiciatis, ab.
-            </p>
-          </div>
-
-          <div class="box">
-            <h3>Project 3</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-              quia nobis eligendi reiciendis. Esse a possimus eum est veritatis
-              aliquid ut eveniet. Et illum odio ut voluptates molestiae?
-              Perspiciatis, ab.
-            </p>
-          </div>
+          <div class="box" style="display: flex">
+            <div class="box">
+              <h3>Online Store</h3>
+              <p>
+                A web-based platform allowing users to browse and purchase products seamlessly, 
+                ensuring a smooth shopping experience.
+              </p>
+              <a href="https://harminderkour.github.io/onlinestore/" style="color: blue; text-decoration: underline;">View Project</a>
+            </div>
+            <div class="box">
+              <h3>My Bank</h3>
+              <p>
+                A secure banking system offering online transactions, balance tracking, and 
+                account management features.
+              </p>
+              <a href="Tech web/temp20.html" target="_blank">View Project</a>
+            </div>
+            <div class="box">
+              <h3>E-commerce Site</h3>
+              <p>
+                A feature-rich online marketplace providing product listings, payment integration, 
+                and a user-friendly interface.
+              </p>
+              <a href="Tech web/temp23.html" target="_blank">View Project</a>
+            </div>
+            </div>
         </div>
       </div>
-      <div id="services" class="row" style="background-color: lightblue">
-        <h1>Services</h1>
-        <div style="display: flex">
-          <div class="box">
-            <h3>Web App Development</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-              quia nobis eligendi reiciendis. Esse a possimus eum est veritatis
-              aliquid ut eveniet. Et illum odio ut voluptates molestiae?
-              Perspiciatis, ab.
-            </p>
-          </div>
 
-          <div class="box">
-            <h3>Mobile App Development</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-              quia nobis eligendi reiciendis. Esse a possimus eum est veritatis
-              aliquid ut eveniet. Et illum odio ut voluptates molestiae?
-              Perspiciatis, ab.
-            </p>
-          </div>
-
-          <div class="box">
-            <h3>Backend Development</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-              quia nobis eligendi reiciendis. Esse a possimus eum est veritatis
-              aliquid ut eveniet. Et illum odio ut voluptates molestiae?
-              Perspiciatis, ab.
-            </p>
-          </div>
+      <div id="about" class="row" style="background-color: lightblue; color:rgb(56, 33, 3); padding: 30px; text-align: center;"> 
+        <h1>About Me</h1>
+        <!-- <h3>
+          I am a passionate software developer currently pursuing a Bachelor's in Computer Science and 
+          Business Systems. My focus is on software engineering, problem-solving, and creating impactful 
+          digital solutions.
+        </h3> -->
+        <p style="max-width: 800px; margin: 0 auto; font-size: 21px; color: rgb(3, 3, 163);"> 
+          I am deeply passionate about front-end web development, where creativity meets functionality. 
+          Crafting visually appealing, responsive, and user-friendly interfaces excites me as I strive to 
+          deliver seamless digital experiences. I enjoy transforming ideas into interactive web applications 
+          using HTML, CSS, and JavaScript, ensuring both aesthetics and performance. Every project is an 
+          opportunity to enhance usability and bring intuitive designs to life, making the web more engaging 
+          and accessible for users.
+        </p>
+        <!-- <h2>Skills</h2>
+        <h4>HTML, CSS, JavaScript, React.js</h4> -->
+        <div class="skills-container">
+          <h2>Skills</h2>
+          <div class="skills-list">HTML | CSS | JavaScript</div>
         </div>
       </div>
-      <div id="about" class="row">
-        <h1>About</h1>
-        <h3>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere sint
-          optio labore a obcaecati. Ullam distinctio corrupti autem. Veritatis
-          ipsa veniam deserunt asperiores nesciunt at provident itaque
-          cupiditate vel dolor.
-        </h3>
-        <h2>Skills</h2>
-        <h3>Java, Python, Reactjs</h3>
-        <p>Display the logo of all the technologies you know.</p>
-      </div>
-      <div
-        id="contact"
-        class="row"
-        style="background-color: lightgoldenrodyellow"
-      >
+
+      <div id="contact" class="row" style="background-color: lightgoldenrodyellow">
         <h1>Contact</h1>
         <div style="display: flex">
-         
-
           <div class="box">
             <h3>Contact Form</h3>
-            <p>
-             <input type="text" placeholder="Enter Name">
-            </p>
-            <p>
-              <input type="email" placeholder="Enter Email">
-             </p>
-             <p>
-              <textarea rows="10" cols="60" placeholder="Enter message"></textarea>
-             </p>
-             <button>Send</button>
+            <p><input type="text" placeholder="Enter Name"></p>
+            <p><input type="email" placeholder="Enter Email"></p>
+            <p><textarea rows="10" cols="60" placeholder="Enter message"></textarea></p>
+            <button>Send</button>
           </div>
-
           <div class="box">
             <h3>Your/Company Name</h3>
-            <p>
-              <b>Address: </b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-              quia nobis eligendi reiciendis. Esse a possimus eum est veritatis
-              aliquid ut eveniet. Et illum odio ut voluptates molestiae?
-              Perspiciatis, ab.
-            </p>
-            <p>
-              <b>Email Address: </b>sample@email.com
-            </p>
-            <p>
-              <b>Phone Number: </b>+91 343 445 6789
-            </p>
+            <p><b>Address:</b> 123 Tech Street, Innovation City, India</p>
+            <p><b>Email Address:</b> harminder.kour@email.com</p>
+            <p><b>Phone Number:</b> +91 9876543210</p>
           </div>
         </div>
       </div>
+
       <div class="footer">@copyright 2024. All rights reserved.</div>
     </div>
   </body>
